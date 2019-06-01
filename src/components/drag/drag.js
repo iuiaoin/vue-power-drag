@@ -880,10 +880,11 @@ export default {
             }
         },
         getList() {
-            let returnList = _.sortBy(_.cloneDeep(this.yourList), 'y');
+            let returnList = _.cloneDeep(this.yourList);
             let finalList = [];
             _.forEach(returnList, function (item, index) {
                 if (_.isEmpty(item)) return;
+                item.index = item._dragId;
                 delete item['_dragId'];
                 delete item['show'];
                 finalList.push(item);

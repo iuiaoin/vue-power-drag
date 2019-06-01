@@ -1,7 +1,7 @@
-# vue-power-drag
-#### v0.1.5
+# power-drag
+#### v1.0.2
 
-> 基于vue2.x的拖动缩放组件，可嵌套子组件，作者cy
+> 基于vue2.x的拖动缩放组件，可嵌套子组件，inspired by 作者cy
 
 ## DEMO
 <a href='https://xiongcaihu.github.io/#/' target="_blank">https://xiongcaihu.github.io/#/</a>
@@ -155,7 +155,7 @@ export default{
           // index:方框所在list中的下标
       }
       getList:function(){
-          //此方法返回将yourList按照asc排序的数组
+          //此方法返回将yourList数组, 并且提供原本数组的index
           return sortedList; 
       }
       getMaxCell：function(){
@@ -182,7 +182,3 @@ export default{
     this.baseMarginLeft = 20 * (screenWidth / 1366);
     this.baseMarginTop = 20 * (screenHeight / 638);
 ```
-
-### TODO
-1. 继续完善文档
-2. 继续自己测试
